@@ -35,21 +35,19 @@ Usage:
 
 GPU Memory Requirements (estimated):
   Exp 1 (VAE/MNIST):    ~2 GB
+  
   Exp 2 (VAE/CIFAR-10): ~4 GB
+  
   Exp 3 (DDPM/CIFAR-10):~8 GB
+  
   Exp 4 (Gaussian sim): ~6 GB (for largest configs)
+  
   Exp 5 (GPT-2):        ~6 GB (124M params, fp32)
+  
   Exp 6 (Schedule):     ~2 GB
-
-Estimated Runtimes on RTX 5090:
-  Exp 1: ~2.5 hours  (15 gens x 50 epochs x 50k samples)
-  Exp 2: ~8 hours    (10 gens x 100 epochs x ConvVAE)
-  Exp 3: ~20 hours   (8 gens x full DDPM training)
-  Exp 4: ~1 hour     (100k trials GPU-parallel)
-  Exp 5: ~12 hours   (8 gens x GPT-2 fine-tuning)
-  Exp 6: ~30 minutes (analytical + fast simulation)
 
 Output:
   Figures  -> <script_dir>/gpu_figs/
+  
   Results  -> <script_dir>/gpu_results/
 """
