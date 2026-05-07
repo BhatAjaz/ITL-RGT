@@ -24,9 +24,13 @@ Install:
 
 Usage:
   python gpu_experiments.py --exp 1          # Run Experiment 1
+  
   python gpu_experiments.py --exp 4          # Run Experiment 4 (Gaussian sim)
+  
   python gpu_experiments.py --exp all        # Run all experiments
+  
   python gpu_experiments.py --test           # Quick test (verify setup)
+  
   python gpu_experiments.py --exp 1 --seed 42  # Custom seed
 
 GPU Memory Requirements (estimated):
